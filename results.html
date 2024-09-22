@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="results"></div>
+
+    <br />
+    <a href="/">Back To Home</a>
+    //
+    <script>
+      const resultsList = document.getElementById("results");
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        const textNode = document.createTextNode(`${name}: ${value}`);
+        resultsList.appendChild(textNode);
+        resultsList.appendChild(document.createElement("br"));
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 55555555555555555555555555 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+  </head>
+  <body>
+    <div id="results"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const resultsList = document.getElementById("results");
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if ([...urlParams].length === 0) {
+          resultsList.textContent = "لا توجد معلمات في عنوان URL.";
+        } else {
+          let paramsString = "";
+          urlParams.forEach((value, name) => {
+            paramsString += `${name}: ${value}<br>`;
+          });
+          resultsList.innerHTML = paramsString;
+        }
+      });
+    </script>
+  </body>
+</html> -->

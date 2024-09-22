@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* استايلات عامة */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* استايلات الحاوية */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* استايلات رأس الصفحة */
+      .header {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+      }
+
+      /* استايلات التنقل */
+      .navegation__list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* عرض العناصر بشكل أفقي */
+        justify-content: center; /* مركزة العناصر */
+      }
+
+      .navegation__list li {
+        position: relative; /* ضروري للقائمة المنسدلة */
+        margin: 0 15px;
+      }
+
+      .navegation__link {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+      }
+
+      .navegation__link:hover {
+        color: #007bff; /* تغيير اللون عند التحويم */
+      }
+
+      /* استايلات القائمة المنسدلة */
+      .dropdown__menu {
+        display: none; /* اخفاء القائمة المنسدلة */
+        position: absolute; /* ضبط الموضع */
+        top: 100%; /* أسفل الرابط الأساسي */
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        min-width: 150px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .dropdown__item {
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        color: #000;
+      }
+
+      .dropdown__item:hover {
+        background-color: #f1f1f1;
+      }
+
+      /* إظهار القائمة المنسدلة عند التحويم */
+      .dropdown:hover .dropdown__menu {
+        display: block;
+      }
+    </style>
+    <title>Ahmed Rabea</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navegation__list">
+          <ul>
+            <li><a href="#" class="navegation__link">Bio</a></li>
+            <li><a href="#" class="navegation__link">Skills</a></li>
+            <li class="dropdown">
+              <a href="#" class="navegation__link dropdown__link">Media</a>
+              <ul class="dropdown__menu">
+                <li><a href="#" class="dropdown__item">Photos</a></li>
+                <li><a href="#" class="dropdown__item">Videos</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="navegation__link">Project</a></li>
+            <li><a href="#" class="navegation__link">My classes</a></li>
+            <li><a href="#" class="navegation__link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>
