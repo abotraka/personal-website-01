@@ -1,4 +1,9 @@
 @import "./mixins";
+
+.underline {
+  border-bottom: 0.5rem solid var(--color-black);
+}
+
 .bio {
   @include twoColumns($colman-gap: 7.4rem, $row-gap: 0);
 }

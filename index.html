@@ -75,16 +75,16 @@
       <section id="bio" class="bio section">
         <div class="bio__data">
           <h1 class="bio__heading">
-            Hi There, a am A passionate software Engineer
+            Hi There, I'am A passionate software Engineer
           </h1>
           <p class="bio__objective">
-            My name is <span class="bio__nqme">ahmed rabea</span> and I am a
+            My name is <span class="bio__nqme">ahmed rabea</span> and I'am a
             software engineer with a passion for building innovative solutions.
             I have a strong background in web site building
-            <a href="facebook.com" class="bio__facebook"></a>,
-            <a href="twitter.com" class="bio__twitter"></a>,
-            <a href="linkedIn.com" class="bio__linkedIn"></a>and
-            <a href="youtube.com" class="bio__youtube"></a>
+            <a href="#facebook.com" class="bio__facebook">facebook</a>,
+            <a href="#twitter.com" class="bio__twitter">twitter</a>,
+            <a href="#linkedIn.com" class="bio__linkedIn">linkedIn </a> and
+            <a href="#youtube.com" class="bio__youtube">youtube</a>
           </p>
           <a href="#contact" class="bio__links say_hi_link">Say Hi</a>
           <a href="./mohamedAbusreaResume.pdf" class="bio__links find_out_link"
@@ -111,7 +111,7 @@
             <h2 class="skills__title">CSS</h2>
             <span class="skills__years">1 years</span>
           </li>
-          <li class="skills__item">
+          <li data-name="JavaScript" class="skills__item">
             <h2 class="skills__title">JavaScript</h2>
             <span class="skills__years">1 years</span>
           </li>
@@ -119,12 +119,14 @@
             <h2 class="skills__title">React</h2>
             <span class="skills__years">1 years</span>
           </li>
-          <li class="skills__item">
+          <li data-name="redex" class="skills__item">
             <h2 class="skills__title">Redex</h2>
             <span class="skills__years">1 years</span>
           </li>
           <li class="skills__item">
-            <h2 class="skills__title">React testing library</h2>
+            <h2 data-name="react-test" class="skills__title">
+              React testing library
+            </h2>
             <span class="skills__years">1 years</span>
           </li>
         </ul>
@@ -238,9 +240,10 @@
         <a href="mailto:ahmed@gmail.com" class="contact__email"
           >ahmed@gmail.com</a
         >
+
         <div class="contact__socials">
           <a href="#" class="contact__social">
-            <img src="./images/brand/facebook.svg" alt="icon of facebook" />
+            <img src="../images/brand/facebook.svg" alt="icon of facebook" />
           </a>
           <a href="#" class="contact__social">
             <img src="./images/brand/twitter.svg" alt="icon of twitter" />
@@ -287,37 +290,11 @@
             ></textarea>
             <input class="contact__button" type="submit" value="Send Message" />
           </form>
-
-          <!-- <form action="results.html" method="get">
-            <div class="contact__inputs">
-              <input
-                class="contact__input"
-                type="text"
-                placeholder="Full Name"
-                name="name"
-                required
-              />
-              <input
-                class="contact__input"
-                type="tel"
-                placeholder="Phone No"
-                name="phone"
-                required
-              />
-            </div>
-            <textarea
-              class="contact__input contact__textarea"
-              name="description"
-              placeholder="Your Message"
-              id="description"
-              rows="1"
-            ></textarea>
-            <input class="contact__button" type="submit" value="Send Message" />
-          </form> -->
         </div>
       </section>
 
       <footer class="footer">© 2022 by Mohamed Abusrea</footer>
     </div>
+    <script src="challenge1.js"></script>
   </body>
 </html>
